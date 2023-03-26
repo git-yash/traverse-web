@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.mobileOnly {
+  display: none;
+}
+
+@media only screen and (max-width: 425px){
+  .mobileOnly {
+    display: block !important;
+  }
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

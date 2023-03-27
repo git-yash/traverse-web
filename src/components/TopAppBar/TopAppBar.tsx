@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import SearchBar from '../SearchBar/SearchBar';
 import { Avatar, Button } from '@mui/material';
 import profilePicture from '../../assets/images/person.png';
+import '../TopAppBar/TopAppBar.css';
 
 const TopAppBar = ( props: {logo: any}) => {
   return (
@@ -12,11 +13,11 @@ const TopAppBar = ( props: {logo: any}) => {
       <AppBar color='inherit'>
         <Toolbar>
           <div style={{display: "flex"}}>
-            <img src={props.logo} alt='Logo' height={30}/>
-            <p style={{paddingLeft: 10, fontWeight: 'bold', fontSize: 17}}>Traverse</p>
+            <img src={props.logo} alt='Logo' className='traverseLogo' />
+            <p className='traverseText'>Traverse</p>
           </div>
 
-          <div style={{justifyContent: 'center', margin: "auto"}}>
+          <div style={{justifyContent: 'center', margin: "auto", flex: 0.5}}>
             <SearchBar />
           </div>
 

@@ -1,0 +1,34 @@
+
+@media screen and (max-width: 425px) {
+    .traverseLogo {
+        display: none;
+    }
+
+    .traverseText {
+        display: 'none';
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .traverseLogo {
+        padding-bottom: 13px;
+
+    }
+
+    .traverseText {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .traverseLogo {
+        height: 30px;
+        padding-top: 13px;
+    }
+
+    .traverseText {
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 17px;
+    }
+}

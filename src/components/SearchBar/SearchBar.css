@@ -1,6 +1,8 @@
 .searchBarContainer {
     border-radius: 100px;
     box-shadow: 1px 2px 9px #a1a19f;
+    flex-wrap: nowrap;
+    text-align: left;
 }
 
 .searchBarIcon {
@@ -16,7 +18,8 @@ input.searchBarInput:focus {
 
 .searchBarInput {
     border-width: 0;
-    background-color: transparent;
     border-color: white;
     padding: 8px 8px 8px 18px;
+    width: 90%;
+    background-color: transparent;
 }

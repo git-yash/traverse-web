@@ -7,7 +7,6 @@ import TopAppBar from './components/TopAppBar/TopAppBar';
 function App() {
   return (
     <div className="App">
-        <div className='mobileOnly'>show me only for mobile</div>
       <TopAppBar logo={logo}/>
     </div>
   );

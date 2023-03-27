@@ -8,18 +8,20 @@ import profilePicture from '../../assets/images/person.png';
 
 const TopAppBar = ( props: {logo: any}) => {
   return (
-    <Box sx={{ flexGrow: 1, display: 'flex', }}>
+    <Box sx={{ flexGrow: 1, }}>
       <AppBar color='inherit'>
         <Toolbar>
-          <div>
+          <div style={{display: "flex"}}>
             <img src={props.logo} alt='Logo' height={30}/>
             <p style={{paddingLeft: 10, fontWeight: 'bold', fontSize: 17}}>Traverse</p>
           </div>
 
-          <SearchBar />
+          <div style={{justifyContent: 'center', margin: "auto"}}>
+            <SearchBar />
+          </div>
 
-          <div>
-            <Button style={{backgroundColor: '#005DFF', borderRadius: 10, color: 'white', fontFamily: 'Poppins'}}>Lend Items</Button>
+          <div style={{justifyContent: 'right', display: "flex"}}>
+            <Button style={{backgroundColor: 'white', borderRadius: 10, color: '#005DFF', fontFamily: 'Poppins'}}>Lend Items</Button>
             <Avatar src={profilePicture} />
           </div>
         </Toolbar>

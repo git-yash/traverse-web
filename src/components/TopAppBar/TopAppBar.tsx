@@ -17,12 +17,12 @@ const TopAppBar = ( props: {logo: any}) => {
             <p className='traverseText'>Traverse</p>
           </div>
 
-          <div style={{justifyContent: 'center', margin: "auto", flex: 0.5}}>
+          <div className='searchBarContainer'>
             <SearchBar />
           </div>
 
-          <div style={{justifyContent: 'right', display: "flex"}}>
-            <Button style={{backgroundColor: 'white', borderRadius: 10, color: '#005DFF', fontFamily: 'Poppins'}}>Lend Items</Button>
+          <div className='rightContainer' >
+            <Button className='lendItemsButton'>Lend Items</Button>
             <Avatar src={profilePicture} />
           </div>
         </Toolbar>

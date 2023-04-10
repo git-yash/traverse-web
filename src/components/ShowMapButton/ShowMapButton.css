@@ -1,0 +1,16 @@
+.map-button {
+    color: white !important;
+    background-color: #005DFF !important;
+}
+
+.map-button-container {
+    position: fixed;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: flex-end;
+}
+

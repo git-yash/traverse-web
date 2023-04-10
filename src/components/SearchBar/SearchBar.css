@@ -1,23 +1,23 @@
-.searchBarContainer {
+.search-bar-container {
     border-radius: 100px;
     box-shadow: 1px 2px 9px #a1a19f;
     flex-wrap: nowrap;
     text-align: left;
 }
 
-.searchBarIcon {
+.search-bar-icon {
     left: 10px;
     position: relative;
     top: 3px;
-    color: #005DFF;
+    color: #005dff;
     font-size: 18px;
 }
 
-input.searchBarInput:focus {
+input.search-bar-input:focus {
     outline: none;
 }
 
-.searchBarInput {
+.search-bar-input {
     border-width: 0;
     border-color: white;
     padding: 8px 8px 8px 18px;

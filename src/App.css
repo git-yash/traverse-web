@@ -1,9 +1,9 @@
-.App {
+.app {
     text-align: center;
     margin-top: 75px;
 }
 
-.rentalsContainer {
+.rentals-container {
     display: inline-flex;
     margin: 20px;
     justify-content: space-around;
@@ -11,12 +11,12 @@
     flex-wrap: wrap;
 }
 
-.mobileOnly {
+.mobile-only {
     display: none;
 }
 
 @media only screen and (max-width: 425px) {
-    .mobileOnly {
+    .mobile-only {
         display: none;
     }
 }

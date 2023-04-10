@@ -17,4 +17,8 @@ export default class User {
         this.isVerified = isVerified;
     }
 
+    public getFirstLetterOfLastName(): string {
+        return this.lastName.charAt(0) + '.';
+    }
+
 }

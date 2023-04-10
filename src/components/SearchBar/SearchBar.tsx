@@ -6,9 +6,9 @@ import './SearchBar.css'
 
 const SearchBar = () => {
   return (
-    <div className='searchBarContainer'>
-        <FontAwesomeIcon icon={faMagnifyingGlass} className='searchBarIcon' />
-        <input type='text' placeholder='Search...' className='searchBarInput' />
+    <div className='search-bar-container'>
+        <FontAwesomeIcon icon={faMagnifyingGlass} className='search-bar-icon' />
+        <input type='text' placeholder='Search...' className='search-bar-input' />
     </div>
   )
 }

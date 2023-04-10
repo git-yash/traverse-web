@@ -17,7 +17,7 @@ const TopAppBar = ( props: {logo: any}) => {
             <p className='traverseText'>Traverse</p>
           </div>
 
-          <div className='searchBarContainer'>
+          <div className='search-bar-container'>
             <SearchBar />
           </div>
 

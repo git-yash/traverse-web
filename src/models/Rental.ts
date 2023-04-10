@@ -11,6 +11,7 @@ export default class Rental {
     constructor(id: string, image: string, title: string, user: User, rentalAddress: string, pricePerDay: number) {
         this.id = id;
         this.image = image;
+        this.title = title;
         this.user = user;
         this.rentalAddress = rentalAddress;
         this.pricePerDay = pricePerDay;

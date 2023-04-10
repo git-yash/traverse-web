@@ -1,0 +1,22 @@
+.rentalContainer {
+}
+
+.rentalImage {
+    height: 200px;
+    border-radius: 15px;
+}
+
+.titleText {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.titleRatingContainer {
+    justify-content: space-between; /* spaces elements horizontally */
+    display: flex;
+}
+
+.star {
+    margin: 12px;
+    font-size: 18px;
+}

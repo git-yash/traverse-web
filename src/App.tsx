@@ -1,23 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import logo from './assets/images/traverseLogo.png';
 import TopAppBar from './components/TopAppBar/TopAppBar';
-import RentalItemView from "./components/RentalItemView/RentalItemView";
-import {RentalService} from "./service";
 import ShowMapButton from "./components/ShowMapButton/ShowMapButton";
+import CustomMap from "./components/CustomMap/CustomMap";
+import RentalItemsContainer from "./components/RentalItemsContainer/RentalItemsContainer";
 
 function App() {
-    const rentals = new RentalService().getRentals();
+    const [doShowMap, setDoShowMap] = useState(false);
 
     return (
         <div className="app">
             <TopAppBar logo={logo}/>
-            {rentals.map(r => (
-                <div className="rentals-container">
-                    <RentalItemView rental={r}/>
-                </div>
-            ))}
-            <ShowMapButton></ShowMapButton>
+            {doShowMap && (
+                <CustomMap
+                    accessToken='pk.eyJ1IjoieWFzaHMxOCIsImEiOiJjbDF2MHkzMm0wcnE5M2pudHA5MjBqZ3l4In0.IkIOXbAJhopXC4KvGmslLg'
+                    styleID='mapbox://styles/yashs18/cl26jf795006616mv0cd67qi6'></CustomMap>
+            )}
+
+            {!doShowMap && (
+                <RentalItemsContainer></RentalItemsContainer>
+            )}
+
+            <ShowMapButton setMap={() => setDoShowMap(!doShowMap)}></ShowMapButton>
         </div>
     );
 }
